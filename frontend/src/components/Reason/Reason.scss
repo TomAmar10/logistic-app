@@ -1,0 +1,21 @@
+.Reason {
+  text-align: center;
+  margin: 40px 0;
+  .header {
+    font-size: 30px;
+  }
+  .reason-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    img {
+      width: 600px;
+      transform: scaleX(-1);
+    }
+    p {
+        margin-top: 20px;
+      text-align: start;
+      max-width: 400px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.Hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("../../assets/storage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-text {
+    color: white;
+    text-align: center;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      margin: 12px;
+      font-size: 16px;
+    }
+    .hero-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      border: 1px white solid;
+      color: white;
+      background-color: transparent;
+      font-weight: 600;
+      transition: all 0.5s;
+      margin: 0 10px;
+      width: 170px;
+      cursor: pointer;
+      &:hover {
+        color: black;
+        background-color: white;
+        transition: all 0.5s;
+      }
+    }
+    .contact-btn {
+      background-color: rgb(198, 3, 3, 0.7);
+    }
+  }
+}
