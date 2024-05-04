@@ -1,0 +1,40 @@
+.CartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+  border-bottom: 1px #ccc solid;
+  &.last {
+    border-bottom: none;
+  }
+  .item-details {
+    display: flex;
+    gap: 10px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+  }
+  .amount-control{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    justify-content: space-between;
+    button{
+        border: none;
+        background-color: #2f2f2f;
+        color: white;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+  }
+}

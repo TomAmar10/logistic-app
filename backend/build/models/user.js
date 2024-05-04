@@ -35,6 +35,12 @@ var UserSchema = new mongoose_1.Schema({
         maxLength: [12, "Phone number too long"],
         default: "050000000",
     },
+    personal_number: {
+        type: String,
+        required: [true, "Missing personal number"],
+        minLength: [6, "Personal number too short"],
+        maxLength: [9, "Personal number too long"],
+    },
     time_create: {
         type: Date,
         required: [true, "Missing creation time"],

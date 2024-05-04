@@ -11,6 +11,10 @@
   font-weight: bold;
   background-color: rgb(0, 0, 0, 0.2);
   transition: background-color 0.5s;
+  &.not-home{
+    position: relative;
+    margin-bottom: 50px;
+  }
   &.scrolled {
     background-color: rgb(8, 0, 58, 1);
     transition: all 0.5s;
@@ -26,9 +30,17 @@
     display: flex;
     justify-content: center;
     gap: 50px;
-    a {
-      text-decoration: none;
-      color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    &:hover {
+      color: rgb(193, 21, 21);
+      transition: all 0.3s;
+    }
+    &.active {
+      color: rgb(193, 21, 21);
     }
   }
   .Navbar-right {

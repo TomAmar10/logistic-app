@@ -10,7 +10,7 @@ const Steps = () => {
         {stepsList.map((s, i) => {
           const Icon = s.icon;
           return (
-            <div className="single-step">
+            <div className="single-step" key={i}>
               <Icon className="icon" />
               <p>
                 {i + 1}. {s.description}

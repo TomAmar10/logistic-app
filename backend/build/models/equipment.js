@@ -21,6 +21,12 @@ var EquipmentSchema = new mongoose_1.Schema({
         minLength: [2, "Description too short"],
         maxLength: [70, "Description too long"],
     },
+    total_qty: {
+        type: Number,
+        required: [true, "Missing quantity"],
+        min: [0, "Quantiti must be greater than 0"],
+        default: 0,
+    },
     image: {
         type: String,
     },

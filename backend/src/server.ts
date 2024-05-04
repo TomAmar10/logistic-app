@@ -5,7 +5,7 @@ import catchAll from "./middleware/catch-all";
 import AuthRouter from "./routes/auth-routes";
 import EventRouter from "./routes/equipment-routes";
 import CategoryRouter from "./routes/category-routes";
-import BidRouter from "./routes/request-routes";
+import OrderRouter from "./routes/order-routes";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import { config } from "./utils/config";
@@ -53,7 +53,7 @@ server.use(express.json());
 server.use("/api/auth", AuthRouter);
 server.use("/api/equipments", EventRouter);
 server.use("/api/categories", CategoryRouter);
-server.use("/api/requests", BidRouter);
+server.use("/api/orders", OrderRouter);
 server.use("*", (Request: Request, response: Response, next: NextFunction) => {
   next(new errorModel(404, "route not found!"));
 });

@@ -2,3 +2,4 @@ error	 2024-04-01 08:00:12 	 route not found!
 error	 2024-04-01 08:05:43 	 route not found!
 error	 2024-04-01 08:12:01 	 Cannot populate path `items.id_equipment` because it is not in your schema. Set the `strictPopulate` option to false to override.
 error	 2024-04-01 08:20:20 	 Cannot populate path `items.id_equipment` because it is not in your schema. Set the `strictPopulate` option to false to override.
+error	 2024-04-01 04:43:15 	 orders validation failed: items.0.equipment: Missing equipment ID, items.1.equipment: Missing equipment ID, items.2.equipment: Missing equipment ID

@@ -10,7 +10,7 @@ var catch_all_1 = __importDefault(require("./middleware/catch-all"));
 var auth_routes_1 = __importDefault(require("./routes/auth-routes"));
 var equipment_routes_1 = __importDefault(require("./routes/equipment-routes"));
 var category_routes_1 = __importDefault(require("./routes/category-routes"));
-var request_routes_1 = __importDefault(require("./routes/request-routes"));
+var order_routes_1 = __importDefault(require("./routes/order-routes"));
 var dotenv_1 = __importDefault(require("dotenv"));
 var mongoose_1 = __importDefault(require("mongoose"));
 var config_1 = require("./utils/config");
@@ -47,7 +47,7 @@ server.use(express_1.default.json());
 server.use("/api/auth", auth_routes_1.default);
 server.use("/api/equipments", equipment_routes_1.default);
 server.use("/api/categories", category_routes_1.default);
-server.use("/api/requests", request_routes_1.default);
+server.use("/api/orders", order_routes_1.default);
 server.use("*", function (Request, response, next) {
     next(new error_1.default(404, "route not found!"));
 });
